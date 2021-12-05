@@ -801,7 +801,7 @@ MonoBehaviour:
   player1_Inputs:
   - inputType: 0
     inputButtonName: P1KeyboardHorizontal
-    engineRelatedButton: 0
+    engineRelatedButton: 1
     joystickAxisName: P1JoystickHorizontal
     cInputPositiveKeyName: P1Right
     cInputPositiveDefaultKey: D
@@ -817,7 +817,7 @@ MonoBehaviour:
     inputViewerIcon6: {fileID: 2800000, guid: 90523496d8897124e989ad256f109d27, type: 3}
   - inputType: 1
     inputButtonName: P1KeyboardVertical
-    engineRelatedButton: 2
+    engineRelatedButton: 3
     joystickAxisName: P1JoystickVertical
     cInputPositiveKeyName: P1Up
     cInputPositiveDefaultKey: W
@@ -1348,7 +1348,7 @@ MonoBehaviour:
     inputsToggle: 0
     networkToggle: 0
     recordToggle: 0
-    hitboxColorsToggle: 1
+    hitboxColorsToggle: 0
     connectionLog: 1
     ping: 1
     frameDelay: 1
@@ -1436,7 +1436,7 @@ MonoBehaviour:
       attackProbability: 0
     multiCoreSupport: 1
     persistentBehavior: 0
-    difficultyToggle: 1
+    difficultyToggle: 0
     difficultySettings:
     - difficultyLevel: 0
       overrideTimeBetweenDecisions: 1
@@ -1510,7 +1510,7 @@ MonoBehaviour:
       overrideComboEfficiency: 1
       comboEfficiency: 1
       startupBehavior: 4
-    selectedDifficultyLevel: 2
+    selectedDifficultyLevel: 0
     selectedDifficulty:
       difficultyLevel: 2
       overrideTimeBetweenDecisions: 0
