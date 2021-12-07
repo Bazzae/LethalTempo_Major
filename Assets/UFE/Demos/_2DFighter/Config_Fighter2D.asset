@@ -159,11 +159,15 @@ MonoBehaviour:
           possibleStagesIndexes: 00000000
         showOpponentsInEditor: 1
       showStoryInEditor: 1
-    selectableCharactersInStoryMode: 00000000
-    selectableCharactersInVersusMode: 00000000
+    selectableCharactersInStoryMode: 0000000001000000
+    selectableCharactersInVersusMode: 0000000001000000
     characterStories:
-      _keys: 00000000
+      _keys: 0000000001000000
       _values:
+      - opening: {fileID: 0}
+        ending: {fileID: 0}
+        fightsGroups: []
+        showStoryInEditor: 0
       - opening: {fileID: 0}
         ending: {fileID: 0}
         fightsGroups: []
@@ -801,7 +805,7 @@ MonoBehaviour:
   player1_Inputs:
   - inputType: 0
     inputButtonName: P1KeyboardHorizontal
-    engineRelatedButton: 0
+    engineRelatedButton: 1
     joystickAxisName: P1JoystickHorizontal
     cInputPositiveKeyName: P1Right
     cInputPositiveDefaultKey: D
@@ -817,7 +821,7 @@ MonoBehaviour:
     inputViewerIcon6: {fileID: 2800000, guid: 90523496d8897124e989ad256f109d27, type: 3}
   - inputType: 1
     inputButtonName: P1KeyboardVertical
-    engineRelatedButton: 2
+    engineRelatedButton: 3
     joystickAxisName: P1JoystickVertical
     cInputPositiveKeyName: P1Up
     cInputPositiveDefaultKey: W
@@ -1142,6 +1146,7 @@ MonoBehaviour:
         _serializedValue: 0
   characters:
   - {fileID: 11400000, guid: d6338f103bbb0da46ba6acf3b027f17a, type: 2}
+  - {fileID: 11400000, guid: ac6ffbd93fffdbb47a2a75f1f84ecd37, type: 2}
   teamModes:
   - modeName: Tag Battle (DBZF\Marvel) - 2D 3v3 Tag Team
     teams:
@@ -1348,7 +1353,7 @@ MonoBehaviour:
     inputsToggle: 0
     networkToggle: 0
     recordToggle: 0
-    hitboxColorsToggle: 1
+    hitboxColorsToggle: 0
     connectionLog: 1
     ping: 1
     frameDelay: 1
@@ -1436,7 +1441,7 @@ MonoBehaviour:
       attackProbability: 0
     multiCoreSupport: 1
     persistentBehavior: 0
-    difficultyToggle: 1
+    difficultyToggle: 0
     difficultySettings:
     - difficultyLevel: 0
       overrideTimeBetweenDecisions: 1
@@ -1510,19 +1515,19 @@ MonoBehaviour:
       overrideComboEfficiency: 1
       comboEfficiency: 1
       startupBehavior: 4
-    selectedDifficultyLevel: 2
+    selectedDifficultyLevel: 0
     selectedDifficulty:
-      difficultyLevel: 2
-      overrideTimeBetweenDecisions: 0
-      timeBetweenDecisions: 0
-      overrideTimeBetweenActions: 0
-      timeBetweenActions: 0.05
-      overrideAggressiveness: 0
-      aggressiveness: 0.4
+      difficultyLevel: 0
+      overrideTimeBetweenDecisions: 1
+      timeBetweenDecisions: 0.4
+      overrideTimeBetweenActions: 1
+      timeBetweenActions: 0.1
+      overrideAggressiveness: 1
+      aggressiveness: 0.1
       overrideRuleCompliance: 0
       ruleCompliance: 0.9
-      overrideComboEfficiency: 0
-      comboEfficiency: 1
+      overrideComboEfficiency: 1
+      comboEfficiency: 0.1
       startupBehavior: 3
   networkOptions:
     forceAnimationControl: 1
