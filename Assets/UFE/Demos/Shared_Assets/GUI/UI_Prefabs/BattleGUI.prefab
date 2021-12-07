@@ -2572,6 +2572,7 @@ GameObject:
   - component: {fileID: 7321870437598171722}
   - component: {fileID: 8147112459678597331}
   - component: {fileID: 2184515591252407711}
+  - component: {fileID: 6715029938872858573}
   m_Layer: 5
   m_Name: Metronome_Indicator
   m_TagString: Untagged
@@ -2750,3 +2751,17 @@ MonoBehaviour:
   gain: 0.5
   signatureHi: 4
   signatureLo: 4
+  IW: {fileID: 0}
+--- !u!114 &6715029938872858573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629713463527551383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e7d5afc803f274382bdd298d8ad859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaying: 0
