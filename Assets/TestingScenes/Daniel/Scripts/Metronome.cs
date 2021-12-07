@@ -5,7 +5,7 @@ using System.Collections;
 // While the game is paused or the suspended, this time will not be updated and sounds playing will be paused. Therefore developers of music scheduling routines do not have to do any rescheduling after the app is unpaused
 
 [RequireComponent(typeof(AudioSource))]
-public class ExampleClass : MonoBehaviour
+public class Metronome : MonoBehaviour
 {
     public double bpm = 140.0F;
     public float gain = 0.5F;
@@ -54,6 +54,7 @@ public class ExampleClass : MonoBehaviour
                     amp *= 2.0F;
                 }
                 Debug.Log("Tick: " + accent + "/" + signatureHi);
+                // Add a bool condition function within "ControlsScript" line 1263 
             }
             phase += amp * 0.3F;
             amp *= 0.993F;
