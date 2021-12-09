@@ -890,7 +890,6 @@ public class ControlsScript : MonoBehaviour {
 		IDictionary<InputReferences, InputEvents> currentInputs
 	){
 		if (!introPlayed || !opControlsScript.introPlayed) return;
-		if (UFE.config.lockInputs && !UFE.config.roundOptions.allowMovementStart) return;
 		if (UFE.config.lockMovements) return;
 
         FPVector lookDirection = FPVector.zero;

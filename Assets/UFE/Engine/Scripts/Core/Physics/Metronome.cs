@@ -4,8 +4,8 @@ using System.Collections;
 // The code example shows how to implement a metronome that procedurally generates the click sounds via the OnAudioFilterRead callback.
 // While the game is paused or the suspended, this time will not be updated and sounds playing will be paused. Therefore developers of music scheduling routines do not have to do any rescheduling after the app is unpaused
 
-//namespace UFE3D
-/*{
+namespace UFE3D
+{
     [RequireComponent(typeof(AudioSource))]
     public class Metronome : MonoBehaviour
     {
@@ -57,7 +57,12 @@ using System.Collections;
                         accent = 1;
                         amp *= 2.0F;
                     }
-                    Debug.Log("Tick: " + accent + "/" + signatureHi + "\n" + n);
+                    Debug.Log("Tick: " + accent + "/" + signatureHi);
+
+                    if(accent == 4)
+                    {
+                        IW.isPlaying = !IW.isPlaying;
+                    }
                     
                 }
                 phase += amp * 0.3F;
@@ -66,9 +71,8 @@ using System.Collections;
             }
         }
     }
-}*/
-
-namespace UFE3D
+}
+/*namespace UFE3D
 {
     public class Metronome : MonoBehaviour
     {
@@ -88,3 +92,4 @@ namespace UFE3D
         }
     }
 }
+*/
